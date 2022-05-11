@@ -21,7 +21,6 @@ import org.jetbrains.java.generate.element.ElementComparator;
 import org.jetbrains.java.generate.element.GenerationHelper;
 import org.jetbrains.java.generate.exception.GenerateCodeException;
 import org.jetbrains.java.generate.exception.PluginException;
-import org.jetbrains.java.generate.psi.PsiAdapter;
 import org.jetbrains.java.generate.velocity.VelocityFactory;
 
 import java.io.StringWriter;

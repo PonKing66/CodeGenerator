@@ -68,7 +68,7 @@ public class JavaBodyWorker {
 
             if (!notAskAgain) {
                 policy = handleExistedMember(codeTemplate, member, existingMember);
-                notAskAgain = policy == ConflictResolutionPolicy.DUPLICATE_ALL || policy == me.lotabout.codegenerator.ConflictResolutionPolicy.REPLACE_ALL;
+                notAskAgain = policy == ConflictResolutionPolicy.DUPLICATE_ALL || policy == ConflictResolutionPolicy.REPLACE_ALL;
             }
 
             switch (policy) {

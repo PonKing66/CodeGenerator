@@ -30,12 +30,12 @@ import me.lotabout.codegenerator.config.ClassSelectionConfig;
 import me.lotabout.codegenerator.config.CodeTemplate;
 import me.lotabout.codegenerator.config.MemberSelectionConfig;
 import me.lotabout.codegenerator.config.PipelineStep;
-import me.lotabout.codegenerator.util.EntryFactory;
-import me.lotabout.codegenerator.util.GenerationUtil;
 import me.lotabout.codegenerator.util.MemberEntry;
 import me.lotabout.codegenerator.worker.JavaBodyWorker;
 import me.lotabout.codegenerator.worker.JavaCaretWorker;
 import me.lotabout.codegenerator.worker.JavaClassWorker;
+import me.lotabout.codegenerator.util.EntryFactory;
+import me.lotabout.codegenerator.util.GenerationUtil;
 import org.apache.commons.lang.StringUtils;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -222,6 +222,7 @@ public class CodeGeneratorAction extends AnAction {
         }
         return null;
     }
+
 
     private List<PsiMember> selectMember(@NotNull PsiJavaFile file, MemberSelectionConfig config, Map<String, Object> contextMap) {
         final String AVAILABLE_MEMBERS = "availableMembers";
